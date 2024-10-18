@@ -1,2 +1,3 @@
-WinLite is a light weight wrapper around `Windows.h` that removes the vast majority of extra baggage that normally comes with `Windows.h`. 
-If you want a truely bare minimum `Windows.h` this is what you need.
+WinLite is a lightweight wrapper around `windows.h`
+that removes the vast majority of extra baggage that normally comes with `windows.h`. 
+If you want a truly bare minimum `windows.h` this is what you need.

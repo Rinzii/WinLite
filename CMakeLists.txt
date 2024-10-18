@@ -15,7 +15,7 @@ set(SOURCES
         include/WinLite/internal/minWindows.h
         include/WinLite/internal/postWinapi.h
         include/WinLite/internal/preWinapi.h
-        include/WinLite/Windows.h
+        include/WinLite/windows.h
 )
 
 # Define the library as an INTERFACE library since it is header-only
