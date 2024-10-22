@@ -19,10 +19,10 @@ set(SOURCES
 )
 
 # Define the library as an INTERFACE library since it is header-only
-add_library(WinLite INTERFACE)
+add_library(win::lite INTERFACE)
 
 # Specify the include directories
-target_include_directories(WinLite INTERFACE
+target_include_directories(win::lite INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>
 )
@@ -33,7 +33,7 @@ if(WINLITE_INSTALL)
     include(GNUInstallDirs)
 
     # Install the library target (header-only so no compiled files)
-    install(TARGETS WinLite
+    install(TARGETS win::lite
             EXPORT WinLiteTargets
             INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
     )
@@ -46,7 +46,7 @@ if(WINLITE_INSTALL)
     # Export the package for use with find_package
     install(EXPORT WinLiteTargets
             FILE WinLiteTargets.cmake
-            NAMESPACE win::lite::
+            NAMESPACE win::
             DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/WinLite
     )
 
