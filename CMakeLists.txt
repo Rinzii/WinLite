@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.14)
 
 # Project details
 project(WinLite VERSION 1.0.0 LANGUAGES C)
@@ -46,7 +46,7 @@ if(WINLITE_INSTALL)
     # Export the package for use with find_package
     install(EXPORT WinLiteTargets
             FILE WinLiteTargets.cmake
-            NAMESPACE WinLite::
+            NAMESPACE win::lite::
             DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/WinLite
     )
 
